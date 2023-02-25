@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Navigation from "../components/Navigation.astro";
+import HeaderInfo from "../components/HeaderInfo.astro";
+
+---
+
+
+<Layout title="blog | htmldev30">
+    <main>
+        <h1>blog page</h1>
+        <Navigation/>
+        <HeaderInfo headerInfo="stuff that i talk about. a bit empty at the moment."/>
+        <!--<BlogPost title="this is a test title" body="Lorem ispum "/>-->
+    </main>
+</Layout>
+<style>
+	body {
+		font-family: 'Courier New', Courier, monospace;
+		text-transform: lowercase;
+	}
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+</style>

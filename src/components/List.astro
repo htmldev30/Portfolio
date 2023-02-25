@@ -1,0 +1,20 @@
+---
+export interface Props {
+    listTitle: string;
+}
+const {listTitle} = Astro.props;
+---
+
+<ul>
+    <h3>{listTitle}</h3>
+    <slot/>
+</ul>
+
+<style>
+  
+	h3 {
+		font-size: 1.25rem;
+	}
+
+
+</style>

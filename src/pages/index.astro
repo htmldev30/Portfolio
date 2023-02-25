@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import List from '../components/List.astro';
+import ListElements from '../components/ListElements.astro';
+import HeaderInfo from '../components/HeaderInfo.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<Layout title="home page | htmldev30">
+	<main>
+		<h1>home page</h1>
+		<Navigation/>
+		<HeaderInfo headerInfo="i am an aspiring computer science student; i am also interested in internet crowdsourcing specifically for public policy initiatives."/>
+		<List listTitle="latest projects">
+			<ListElements elementTitle="schoolchat | fbla state competitions" 
+			elementBody="an application for students and school to share community updates to parents" 
+			elementHref="https://github.com/htmldev30/SchoolApp"/>
+			
+			<ListElements elementTitle="tinkering with arduino" 
+			elementBody="i recently got an arudino and i am doing fun hardware things. some sketches on tinkercad" 
+			elementHref="https://github.com/htmldev30/TinkeringWithArduino"/>
+		</List>
+	
+	</main>
+</Layout>
+
+<style>
+	body {
+		font-family: 'Courier New', Courier, monospace;
+		text-transform: lowercase;
+	}
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+</style>

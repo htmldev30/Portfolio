@@ -1,0 +1,38 @@
+---
+export interface Props {
+	elementTitle: string;
+	elementBody: string;
+	elementHref: string;
+}
+
+const { elementTitle, elementBody, elementHref } = Astro.props;
+---
+
+<li>
+	<a href={elementHref}>
+		<h4>
+			{elementTitle}
+		</h4>
+
+	</a>
+	<span>
+		{elementBody}
+	</span>
+</li>
+
+<style>
+	li{
+		margin-bottom: 1rem;
+	}
+	h4 {
+		text-decoration: none;
+		margin: 0;
+		font-size: 1.25rem;		
+	}
+	span {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+		color: #444;
+	}
+
+</style>
